@@ -10,9 +10,12 @@
         (#{purno},#{purman},#{applydep},#{applyman},#{description},#{buymoney},now(),'待审核')
     </insert>
     <insert id="addPurDetail" parameterType="java.util.List">
-        insert into tab_detail_purchase(purno,goodsno,goodsname,goodstype,puramount,subtotal,createtime) values
+        insert into tab_detail_purchase(purno,goodsno,goodsname,goodstype,puramount,subtotal,createtime,caastatus) values
         <foreach collection="list" item="item" separator=",">
-            (#{item.purno},#{item.goodsno},#{item.goodsname},#{item.goodstype},#{item.puramount},#{item.subtotal},now())
+            (#{item.purno},#{item.goodsno},#{item.goodsname},#{item.goodstype},#{item.puramount},#{item.subtotal},now(),'未验收')
         </foreach>
     </insert>
+    <update id="updatePurStatus">
+        update tab_total_purchase set purstatus = '采购完成' where purno = #{purno}
+    </update>
 </mapper>

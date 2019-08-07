@@ -48,4 +48,30 @@ public class MenuController {
     public String toAdminUser(){
         return "rear/adminpersonalManager";
     }
+
+    /**
+     * 去销售人员增删改查
+     * @return
+     */
+    @RequestMapping("/toSlm")
+    public String toSlm(){
+        return "rear/showslm";
+    }
+    /**
+     * 去采购入库
+     * @return
+     */
+    @RequestMapping("/toOrderHandler")
+    public String toOrderHandler(){
+        return "rear/orderhandler";
+    }
+
+    /**
+     * 去采购退货
+     * @return
+     */
+    @RequestMapping("/toOrderReturn")
+    public String toOrderReturn(){
+        return "rear/orderreturn";
+    }
 }
