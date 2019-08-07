@@ -4,6 +4,7 @@ import com.i.entity.Goods;
 import com.i.service.GoodsService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
@@ -17,6 +18,11 @@ public class GoodsController {
     @Resource
     private GoodsService goodsService;
 
+    @RequestMapping("/seachAllGoods")
+    @ResponseBody
+    public List<Map> seachAllGoods(@RequestParam(value = "queryName",required = false)String queryName){
+        return goodsService.seachAllGoods(queryName);
+    }
     //查询商品信息
     @RequestMapping("/selAllGoods")
     @ResponseBody
@@ -47,5 +53,6 @@ public class GoodsController {
         goodsService.updateGoods(goods);
         return "true";
     }
+
 
 }

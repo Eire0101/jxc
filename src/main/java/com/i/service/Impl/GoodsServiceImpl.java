@@ -34,4 +34,8 @@ public class GoodsServiceImpl implements GoodsService {
     public void updateGoods(Goods goods) {
         goodsDao.updateGoods(goods);
     }
+    @Override
+    public List<Map> seachAllGoods(String queryName) {
+        return goodsDao.seachAllGoods(queryName);
+    }
 }

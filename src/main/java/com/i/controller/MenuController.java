@@ -48,4 +48,13 @@ public class MenuController {
     public String toAdminUser(){
         return "rear/adminpersonalManager";
     }
+    @RequestMapping("/toSupplier")
+    public  String toSupplier(){
+        return "rear/supplier";
+    }
+
+    @RequestMapping("/toInventory")
+    public  String toInventory(){
+        return  "rear/inventory";
+    }
 }
