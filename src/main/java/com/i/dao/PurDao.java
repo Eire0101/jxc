@@ -6,6 +6,10 @@ import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Repository;
 
+<<<<<<< HEAD
+=======
+import java.util.ArrayList;
+>>>>>>> 111
 import java.util.List;
 import java.util.Map;
 
@@ -32,7 +36,11 @@ public interface PurDao {
 
     //更新订单状态
     @Update("update tab_total_purchase set purstatus = #{purstatus} where purno = #{purno}")
+<<<<<<< HEAD
     public void sh(@Param("purno") String purno, @Param("purstatus") String purstatus);
+=======
+    public void sh(@Param("purno") String purno,@Param("purstatus") String purstatus);
+>>>>>>> 111
 
     //获取页数
     @Select("select count(*) from tab_total_purchase where purstatus = '通过审核'")
@@ -40,7 +48,11 @@ public interface PurDao {
 
     //根据当前页码和页面容量获取通过审核的订单
     @Select("select * from tab_total_purchase where purstatus = '通过审核' limit #{currIndex},#{pagesize}")
+<<<<<<< HEAD
     public List<Map> tgshQuery(@Param("currIndex") Integer currIndex, @Param("pagesize") Integer pagesize);
+=======
+    public List<Map> tgshQuery(@Param("currIndex")Integer currIndex,@Param("pagesize")Integer pagesize);
+>>>>>>> 111
 
     //根据订单编号获取订单详情数据
     @Select("select * from tab_detail_purchase tdp join tab_goods tg on tdp.goodsno = tg.goodsno join tab_goodstype tgt on " +

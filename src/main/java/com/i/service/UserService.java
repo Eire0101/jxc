@@ -5,6 +5,7 @@ import com.i.entity.UserInfo;
 import java.util.List;
 import java.util.Map;
 
+
 public interface UserService {
     //登录
     public UserInfo login(UserInfo user);

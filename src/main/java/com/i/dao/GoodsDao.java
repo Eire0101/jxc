@@ -30,4 +30,6 @@ public interface GoodsDao {
             "origin=#{origin},measurement=#{measurement},inventory=#{inventory},typeid=#{typeid} where goodsno=#{goodsno}")
     public void updateGoods(Goods goods);
 
+    @SelectProvider(type=SQLProvider.class ,method="select1")
+    public List<Map> seachAllGoods(String queryName);
 }

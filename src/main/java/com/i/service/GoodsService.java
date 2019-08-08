@@ -29,4 +29,5 @@ public interface GoodsService {
      * @return
      */
     public void updateGoods(Goods goods);
+    public List<Map> seachAllGoods(String queryName);
 }

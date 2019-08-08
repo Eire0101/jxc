@@ -3,6 +3,9 @@ package com.i.service;
 import com.github.pagehelper.PageInfo;
 import com.i.entity.Slm;
 
+import java.util.List;
+import java.util.Map;
+
 public interface SlmService {
 
     public Integer getSlmCount();
