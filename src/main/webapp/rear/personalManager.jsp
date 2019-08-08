@@ -17,7 +17,7 @@
         <th>电话号码</th>
         <th>地址</th>
         <th>密码</th>
-        <th>职位</th>
+        <th>职位(1:管理员/2:普工)</th>
         <th>操作</th>
     </tr>
     </thead>
@@ -41,11 +41,11 @@
             <!-- 模态框主体 -->
             <div class="modal-body">
                 <form id="myform1">
-                    用户编号:<input class="userno" name="userno" readonly/><br/>
-                    用户名:<input class="username" name="username" /><br/>
-                    电话号码:<input class="telphone" name="telphone" readonly/><br/>
-                    地址:<input class="address" name="address" /><br/>
-                    密码:<input class="pwd" name="pwd" /><br/>
+                    用户编号:&nbsp; <input class="userno" name="userno" readonly/><br/>
+                    用户名:&nbsp; &nbsp; &nbsp; <input class="username" name="username" /><br/>
+                    电话号码:&nbsp; <input class="telphone" name="telphone" readonly/><br/>
+                    地址:&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <input class="address" name="address" /><br/>
+                    密码:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input class="pwd" name="pwd" /><br/>
                 </form>
             </div>
 

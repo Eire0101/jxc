@@ -18,7 +18,7 @@
             <th>电话号码</th>
             <th>地址</th>
             <th>密码</th>
-            <th>职位</th>
+            <th>职位(1:管理员/2:普工)</th>
         </tr>
         </thead>
         <tbody id="mytbd1">
@@ -44,7 +44,7 @@
         <th>电话号码</th>
         <th>地址</th>
         <th>密码</th>
-        <th>职位</th>
+        <th>职位(1:管理员/2:普工)</th>
         <th>操作</th>
     </tr>
     </thead>
@@ -68,12 +68,12 @@
             <!-- 模态框主体 -->
             <div class="modal-body">
                 <form id="myform2">
-                    用户编号:<input class="userno" name="userno" readonly/><br/>
-                    用户名:<input class="username" name="username" /><br/>
-                    电话号码:<input class="telphone" name="telphone"/><br/>
-                    地址:<input class="address" name="address" /><br/>
-                    密码:<input class="pwd" name="pwd" /><br/>
-                    职位:<input class="roleid" name="roleid" /><br/>
+                    用户编号:&nbsp;&nbsp;<input class="userno" name="userno" readonly/><br/>
+                    用户名:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="username" name="username" /><br/>
+                    电话号码:&nbsp;&nbsp;<input class="telphone" name="telphone"/><br/>
+                    地址:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="address" name="address" /><br/>
+                    密码:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="pwd" name="pwd" /><br/>
+                    职位:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="roleid" name="roleid" /><br/>
                 </form>
             </div>
 

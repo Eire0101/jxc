@@ -22,7 +22,7 @@
         <th>源产地</th>
         <th>计量单位</th>
         <th>库存</th>
-        <th>类别</th>
+        <th>类别(1：饮料/2：零食)</th>
         <th>操作</th>
     </tr>
     </thead>
@@ -57,7 +57,7 @@
         <th>源产地</th>
         <th>计量单位</th>
         <th>库存</th>
-        <th>类别</th>
+        <th>类别(1：饮料/2：零食)</th>
         <th>操作</th>
     </tr>
     </thead>
@@ -81,16 +81,16 @@
             <!-- 模态框主体 -->
             <div class="modal-body">
                 <form id="myfrom2">
-                    商品编号:<input class="goodsno" name="goodsno" placeholder="商品编号" readonly/><br/>
-                    商品名称:<input class="goodsname" name="goodsname" placeholder="商品名称"/><br/>
-                    商品规格:<input class="goodsspec" name="goodsspec" placeholder="商品规格"/><br/>
-                    销售单价:<input class="purchaseprice" name="purchaseprice" placeholder="销售单价"/><br/>
-                    零售价:<input class="unitsalesprice" name="unitsalesprice" placeholder="零售价"/><br/>
+                    商品编号:&nbsp; &nbsp;<input class="goodsno" name="goodsno" placeholder="商品编号" readonly/><br/>
+                    商品名称:&nbsp;&nbsp;&nbsp;<input class="goodsname" name="goodsname" placeholder="商品名称"/><br/>
+                    商品规格:&nbsp;&nbsp;&nbsp;<input class="goodsspec" name="goodsspec" placeholder="商品规格"/><br/>
+                    销售单价:&nbsp;&nbsp;&nbsp; <input class="purchaseprice" name="purchaseprice" placeholder="销售单价"/><br/>
+                    零售价:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="unitsalesprice" name="unitsalesprice" placeholder="零售价"/><br/>
                     建议零售价:<input class="suggestedretailprice" name="suggestedretailprice" placeholder="建议零售价"/><br/>
-                    源产地:<input class="origin" name="origin" placeholder="源产地"/><br/>
-                    计量单位:<input class="measurement" name="measurement" placeholder="计量单位"/><br/>
-                    库存:<input class="inventory" name="inventory" placeholder="库存"/><br/>
-                    类别:<input class="typeid" name="typeid" placeholder="类别"/><br/>
+                    源产地:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="origin" name="origin" placeholder="源产地"/><br/>
+                    计量单位:&nbsp;&nbsp;&nbsp;&nbsp;<input class="measurement" name="measurement" placeholder="计量单位"/><br/>
+                    库存:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="inventory" name="inventory" placeholder="库存"/><br/>
+                    类别:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="typeid" name="typeid" placeholder="类别"/><br/>
                 </form>
             </div>
 
