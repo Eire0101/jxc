@@ -48,4 +48,22 @@ public class MenuController {
     public String toAdminUser(){
         return "rear/adminpersonalManager";
     }
+
+    /**
+     * 去销售出库
+     * @return
+     */
+    @RequestMapping("/toSaleStock")
+    public String toSaleStock(){
+        return "rear/salestock";
+    }
+
+    /**
+     * 去销售退货
+     * @return
+     */
+    @RequestMapping("/toSaleBack")
+    public String toSaleBack(){
+        return "rear/saleback";
+    }
 }

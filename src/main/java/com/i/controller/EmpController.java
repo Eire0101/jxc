@@ -1,28 +1,21 @@
 package com.i.controller;
 
-<<<<<<< HEAD
-import com.i.entity.Emp;
-import com.i.service.EmpService;
-import org.springframework.stereotype.Controller;
-=======
+
 import com.fasterxml.jackson.databind.util.BeanUtil;
 import com.i.entity.Emp;
 import com.i.service.EmpService;
 import org.apache.commons.beanutils.BeanUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
->>>>>>> 111
+
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
-<<<<<<< HEAD
-import java.util.List;
-import java.util.Map;
-=======
+
 import java.lang.reflect.InvocationTargetException;
 import java.util.*;
->>>>>>> 111
+
 
 @Controller
 @RequestMapping("/emp")
