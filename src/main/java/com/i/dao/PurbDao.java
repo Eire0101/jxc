@@ -1,7 +1,11 @@
 package com.i.dao;
 
 import com.i.entity.PurB;
-import org.apache.ibatis.annotations.*;
+
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -44,8 +48,8 @@ public interface PurbDao {
      * @param inv
      * @param bgoodsno
      */
-    public void updateInv(@Param("inv") Integer inv,@Param("bgoodsno") String bgoodsno);
+    public void updateInv(@Param("inv") Integer inv, @Param("bgoodsno") String bgoodsno);
 
     @Update("update tab_detail_storage set isback = '已退货' where storageno = #{storageno} and storagegoodsno = #{goodsno}")
-    public void updateIsBack(@Param("goodsno") String goodsno,@Param("storageno") String storageno);
+    public void updateIsBack(@Param("goodsno") String goodsno, @Param("storageno") String storageno);
 }

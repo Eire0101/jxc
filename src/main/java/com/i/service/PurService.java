@@ -13,11 +13,11 @@ public interface PurService {
 
     public List<Map> selAllPurDetail();
 
-    public void sh(String purno,String purstatus);
+    public void sh(String purno, String purstatus);
 
     public int getPageCount();
 
-    public List<Map> tgshQuery(Integer currIndex,Integer pagesize);
+    public List<Map> tgshQuery(Integer currIndex, Integer pagesize);
 
     public List<Map> getPurDetailBypurno(String purno);
 }
