@@ -18,4 +18,10 @@
     <update id="updatePurStatus">
         update tab_total_purchase set purstatus = '采购完成' where purno = #{purno}
     </update>
+    <!--<insert id="">
+        insert into tab_detail_purchase(purno,goodsno,goodsname,goodstype,puramount,subtotal,createtime) values
+        <foreach collection="list" item="item" separator=",">
+            (#{item.purno},#{item.goodsno},#{item.goodsname},#{item.goodstype},#{item.puramount},#{item.subtotal},now())
+        </foreach>
+    </insert>-->
 </mapper>

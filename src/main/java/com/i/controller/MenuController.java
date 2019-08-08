@@ -57,7 +57,30 @@ public class MenuController {
      * @return
      */
     @RequestMapping("/toOrderReturn")
-    public String toOrderReturn(){
+    public String toOrderReturn() {
         return "rear/orderreturn";
+    }
+    @RequestMapping("/toGoods")
+    public String toGoods(){
+        return "rear/goods";
+    }
+
+    @RequestMapping("/toUser")
+    public String toUser(){
+        return "rear/personalManager";
+    }
+
+    @RequestMapping("/toAdminUser")
+    public String toAdminUser(){
+        return "rear/adminpersonalManager";
+    }
+    @RequestMapping("/toSupplier")
+    public  String toSupplier(){
+        return "rear/supplier";
+    }
+
+    @RequestMapping("/toInventory")
+    public  String toInventory(){
+        return  "rear/inventory";
     }
 }

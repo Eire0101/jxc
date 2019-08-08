@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
-import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -34,4 +34,51 @@ public class UserController {
         return "rear/backIndex";
     }
 
+    //查询用户个人信息(普工)
+    @RequestMapping("/selectUser")
+    @ResponseBody
+    public List<Map> selectUser(String telphone,HttpSession session){
+         UserInfo userInfo=(UserInfo)session.getAttribute("userInfo");
+        return  userService.selectUser(userInfo.getTelphone());
+    }
+
+    //普工对个人信息的修改
+    @RequestMapping("/updateUser")
+    @ResponseBody
+    public String updateUser(UserInfo userInfo){
+        userService.updateUser(userInfo);
+        return "true";
+    }
+
+    //管理员对个人信息的查询
+    @RequestMapping("/queryUser")
+    @ResponseBody
+    public List<Map> queryUser(){
+        return userService.queryUser();
+    }
+
+    //管理员对个人信息的增加
+    @RequestMapping("/addUser")
+    @ResponseBody
+    public String addUser(UserInfo userInfo){
+        userService.addUser(userInfo);
+        return "true";
+    }
+
+
+    //管理员对个人信息的删除
+    @RequestMapping("/deleteUser")
+    @ResponseBody
+    public String deleteUser(String userno){
+        userService.deleteUser(userno);
+        return "true";
+    }
+
+    //管理员对个人信息的修改
+    @RequestMapping("/updateUser2")
+    @ResponseBody
+    public String updateUser2(UserInfo info){
+        userService.updateUser2(info);
+        return "true";
+    }
 }
