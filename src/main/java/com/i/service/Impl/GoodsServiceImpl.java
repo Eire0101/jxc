@@ -1,6 +1,7 @@
 package com.i.service.Impl;
 
 import com.i.dao.GoodsDao;
+
 import com.i.entity.Goods;
 import com.i.service.GoodsService;
 import org.springframework.stereotype.Service;
@@ -19,6 +20,7 @@ public class GoodsServiceImpl implements GoodsService {
     public List<Map> selAllGoods() {
         return goodsDao.selAllGoods();
     }
+
 
     @Override
     public void deleteGoods(String goodsno) {
