@@ -38,10 +38,10 @@ public interface StorageDao {
      * @param inventory
      * @return
      */
-    public int updateGoodsInv(@Param("inventory") Integer inventory,@Param("storagegoodsno") String storagegoodsno);
+    public int updateGoodsInv(@Param("inventory") Integer inventory, @Param("storagegoodsno") String storagegoodsno);
 
     /**
      * 商品入库后更改其详情表里的验收状态为已验收
      */
-    public void updatePurCaaStatus(@Param("purno") String purno,@Param("storagegoodsno") String storagegoodsno);
+    public void updatePurCaaStatus(@Param("purno") String purno, @Param("storagegoodsno") String storagegoodsno);
 }

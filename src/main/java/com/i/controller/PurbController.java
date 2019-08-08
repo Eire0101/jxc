@@ -1,5 +1,9 @@
 package com.i.controller;
 
+<<<<<<< HEAD
+import com.i.entity.PurB;
+import com.i.service.PurbService;
+=======
 import com.alibaba.fastjson.JSONObject;
 import com.fasterxml.jackson.databind.util.JSONPObject;
 import com.i.entity.PurB;
@@ -7,6 +11,7 @@ import com.i.service.PurbService;
 import org.apache.commons.beanutils.BeanMap;
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.beanutils.BeanUtilsBean;
+>>>>>>> 111
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
