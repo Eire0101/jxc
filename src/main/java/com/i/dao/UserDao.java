@@ -31,6 +31,7 @@ public interface UserDao {
     public void addUser(UserInfo userInfo);
 
     //管理员对个人信息的删除
+    //
     @Delete("delete from userinfo where userno=#{userno}")
     public void deleteUser(String userno);
 
